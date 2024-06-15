@@ -1,0 +1,103 @@
+.contactUs {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.contactUs h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contactUs-content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+}
+
+.contactUs-content-left {
+  padding: 10px;
+}
+
+.contactUs-content-left-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contactUs-content-right {
+  padding: 10px;
+}
+
+.contactUs-content-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactUs-content-right label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contactUs-content-right input,
+.contactUs-content-right textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contactUs-content-right input[type="submit"] {
+  margin-top: 20px;
+  border: 2px solid tomato;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  background-color: tomato;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#asterick {
+  color: red;
+}
+.contactUs-content-right input[type="submit"]:hover {
+  background-color: white;
+  border: 2px solid tomato;
+  color: tomato;
+}
+
+/* @media (max-width: 650px) {
+    .contactUs{
+        width: 100%;
+    }
+    .contactUs-content {
+      grid-template-columns: 1fr;
+      width: 20%;
+    }
+  
+    .contactUs-content-left,
+    .contactUs-content-right {
+      padding: 10px 0;
+    }
+  }
+   */
+@media (max-width: 650px) {
+  .contactUs {
+    width: 100%; /* Take full width of viewport */
+    max-width: 100%; /* Ensure maximum width is also set to 100% for smaller screens */
+  }
+
+  .contactUs-content {
+    grid-template-columns: 1fr; /* Change to single column layout */
+    width: 100%; /* Take full width */
+  }
+
+  .contactUs-content-left,
+  .contactUs-content-right {
+    padding: 10px 0; /* Adjust padding for spacing */
+  }
+}
